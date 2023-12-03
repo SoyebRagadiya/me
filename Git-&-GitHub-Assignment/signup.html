@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+
+
+        }
+
+        .container {
+            background-color: whitesmoke;
+            border-radius: 10px;
+            width: 350px;
+            padding: 0px 15px 0px 15px;
+
+
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .form-g {
+            display: grid;
+            width: 100%;
+            row-gap: 3px;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+
+        .form-g input {
+            height: 25px;
+            border-radius: 3px;
+        }
+
+        select {
+            height: 25px;
+            margin: 0px 2px;
+            border-color: black;
+            border-radius: 3px;
+        }
+        .form-g input[type="submit"]{
+            background-color: black;
+            color: white;
+
+        }
+        .form-g input[type=submit]:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Signup</h1>
+        </div>
+
+        <form action="">
+            <div class="form-g">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-g select">
+                <label for="Batch">Batch:</label>
+                <select name="" id="">
+                    <option value="" selected>Sigma 1.0</option>
+                    <option value="">Sigma 2.0</option>
+                </select>
+            </div>
+            <div class="form-g">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-g">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-g">
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <div class="form-g">
+               <input type="submit" value="Signup">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

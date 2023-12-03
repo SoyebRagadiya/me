@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css  ">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color */
+:root{
+
+/* bgc */
+--body-b:whitesmoke;
+--container-b:white;
+
+
+/* color */
+--input-c:#333;
+}
+.body{
+    background-color: var(--body-b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container{
+    background-color: var(--container-b);
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
+  
+}
+.page{
+    padding: 40px;
+    background-color: var(--page-b);
+}
+.text{
+    background-color: var(--text-b);
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.userbox{
+    position: relative;
+    margin-bottom: 30px;
+        
+}
+
+.userbox input{
+    width: 100%;
+    padding: 10px 0px;
+    color: var(--input-c);
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.2s;
+    background-color: none;
+}
+
+.userbox input:focus,
+.userbox input:valid{
+    border-color: #1e87f0;
+}
+
+.userbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #777;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.2s;
+}
+
+.userbox input:focus~label,
+.userbox input:valid~label{
+    top: -20px;
+    font-size: 12px;
+    color: #1e87f0;
+
+}
+
+button{
+    width: 100%;
+    background-color: #1e87f0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0px;
+}
+button:hover{
+    background-color: #1472c4;
+}
+</style>
+
+<body class="body">
+    <!-- Login -->
+ <div class="container">
+    <div class="page">
+        <h3 class="text">Login</h3>
+        <form action="" class="form">
+            <div class="userbox">
+                
+                <input type="text" name="username " required>
+                <label for="">Username</label>
+                
+            </div>
+
+            <div class="userbox">
+                <input type="text" name="password" required>
+                <label for="">Pasword</label>
+            </div>
+
+            <div class="button">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+ </div>
+
+
+</body>
+</html>
